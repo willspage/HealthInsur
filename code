@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige tu Seguro de Salud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Elige tu Seguro de Salud</h1>
+    </header>
+    <main>
+        <section id="questionnaire">
+            <h2>Cuestionario de Elegibilidad</h2>
+            <form id="eligibility-form">
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" required>
+                <label for="household-size">Número de personas en tu hogar:</label>
+                <input type="number" id="household-size" name="household-size" required>
+                <label for="income">Ingresos Anuales del Hogar:</label>
+                <input type="number" id="income" name="income" required>
+                <label for="employment">¿Estás empleado?</label>
+                <select id="employment" name="employment">
+                    <option value="yes">Sí</option>
+                    <option value="no">No</option>
+                </select>
+                <label for="immigration-status">Estatus Migratorio:</label>
+                <select id="immigration-status" name="immigration-status" required>
+                    <option value="citizen">Ciudadano</option>
+                    <option value="permanent-resident">Residente Permanente</option>
+                    <option value="work-visa">Visa de Trabajo</option>
+                    <option value="undocumented">Indocumentado</option>
+                </select>
+                <!-- Additional questions -->
+                <button type="submit">Ver Resultados</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
